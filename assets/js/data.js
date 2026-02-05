@@ -1,17 +1,18 @@
 const koreaDramas = [
   {
-    title: "Squid Game",
-    poster: "https://cdn.fastora.uz/Series/SquidGame/poster.webp",
-    link: "https://t.me/minxo_tv/1"
+    title: "Zolushka va to’rt Ritsar",
+    poster: "https://cdn.fastora.uz/Minxo_TV/IMG_20260205_200302_712.jpg",
+    link: "https://t.me/Minxotv_Arxiv/8464"
   },
   {
-    title: "Crash Landing On You",
-    poster: "https://cdn.fastora.uz/Series/CrashLandingOnYou/poster.webp",
-    link: "https://t.me/minxo_tv/2"
+    title: "Men bugundan insonman",
+    poster: "https://cdn.fastora.uz/Minxo_TV/IMG_20260205_200328_014.jpg",
+    link: "https://t.me/Minxotv_Arxiv/8430"
   },
   {
-    title: "Itaewon Class",
-    poster: "https://cdn.fastora.uz/Series/ItaewonClass/poster.webp",
-    link: "https://t.me/minxo_tv/3"
+    title: "Bahoriy hislar",
+    poster: "https://cdn.fastora.uz/Minxo_TV/IMG_20260205_210737_087.jpg",
+    link: "https://t.me/Minxotv_Arxiv/8386"
   }
 ];
+
