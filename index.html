@@ -229,6 +229,30 @@
         padding: 16px;
       }
     }
+
+	.header {
+  position: relative;
+  padding: 40px 16px 24px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Yulduzli fon */
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: 
+    url("./assets/img/stars.jpg") center / cover no-repeat;
+  filter: brightness(0.5) blur(1px);
+  z-index: 0;
+}
+
+/* Kontentni oldinga chiqaramiz */
+.header > * {
+  position: relative;
+  z-index: 1;
+}  
   </style>
 </head>
 
