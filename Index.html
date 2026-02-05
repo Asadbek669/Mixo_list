@@ -2,109 +2,292 @@
 <html lang="uz" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <title>FASTORA | Kino Arxivi</title>
+  <title>MINXO TV | MINI xaritasi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     :root {
       --bg: #0b0b0b;
-      --card: #1a1a1a;
+      --card: #141414;
       --text: #ffffff;
-      --accent: #dc2626;       /* qizil */
-      --accent-light: #ef4444; /* och qizil */
-      --gold: #ffffff;          /* oq rang */
+      --muted: #b3b3b3;
+
+      --accent: #dc2626;
+      --accent-light: #ef4444;
       --gradient: linear-gradient(135deg, #dc2626, #ffffff);
-      --shadow: 0 8px 24px rgba(0,0,0,0.6);
-      --border-light: rgba(255,255,255,0.1);
+
+      --border: rgba(255,255,255,0.08);
+      --shadow: 0 10px 30px rgba(0,0,0,0.7);
+      --radius: 16px;
     }
-    [data-theme="light"] {
-      --bg:#ffffff; --card:#f5f5f5; --text:#111; --accent:#dc2626; --accent-light:#ef4444; --gold:#111; --gradient:linear-gradient(135deg,#dc2626,#111); --shadow:0 8px 24px rgba(0,0,0,0.2); --border-light: rgba(0,0,0,0.1);
+
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: radial-gradient(circle at top, #141414, #000);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 16px;
     }
-    * { box-sizing:border-box; margin:0; padding:0; }
-    body { font-family:sans-serif; background: var(--bg); color: var(--text); min-height:100vh; padding:16px; line-height:1.5;}
-    .wrapper { max-width:1000px; margin:auto; }
 
-    /* Header */
-    .header { text-align:center; margin-bottom:30px; }
-    .avatar { width:100px; height:100px; border-radius:50%; margin-bottom:12px; background: var(--gradient); display:inline-block; }
-    h1 { font-size:28px; font-weight:800; background: var(--gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:8px; }
-    .tagline { font-size:14px; color:var(--accent-light); }
+    .wrapper {
+      max-width: 1000px;
+      margin: auto;
+    }
 
-    /* Links */
-    .links { display:flex; flex-direction:column; gap:14px; margin-bottom:30px; }
-    .link { display:flex; align-items:center; padding:18px 20px; background:var(--card); border-radius:16px; text-decoration:none; color:var(--text); font-weight:600; border:1px solid var(--border-light); transition:all 0.2s ease; box-shadow: var(--shadow); position:relative; overflow:hidden; }
-    .link i { font-size:22px; margin-right:16px; color: var(--accent); }
-    .link-text { flex:1; font-size:16px; }
-    .link:hover { transform: translateY(-2px); background: #222; box-shadow:0 8px 24px rgba(0,0,0,0.8); }
+    /* HEADER */
+    .header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
 
-    /* Poster Slider */
-    .slider-wrapper { margin:40px 0; }
-    .slider-wrapper h2 { color: var(--accent); margin-bottom:12px; text-align:center; }
-    .slider-row { display:flex; gap:16px; overflow-x:auto; scroll-behavior:smooth; padding-bottom:10px; }
-    .slider-row::-webkit-scrollbar { height:8px; }
-    .slider-row::-webkit-scrollbar-thumb { background: var(--accent); border-radius:4px; }
-    .slide { flex:0 0 auto; width:150px; border-radius:12px; overflow:hidden; box-shadow: var(--shadow); transition: transform 0.3s ease; cursor:pointer; text-align:center; border:2px solid var(--accent); }
-    .slide img { width:100%; display:block; height:auto; }
-    .slide-name { font-size:14px; margin-top:6px; color:var(--gold); }
+	.avatar {
+	  width: 100px;
+	  height: 100px;
+	  border-radius: 50%;
+	  background: 
+		url("assets/img/avatar.jpg") center / cover no-repeat,
+		linear-gradient(135deg, #dc2626, #ffffff);
+	  margin: 0 auto 14px;
+	  box-shadow: 0 0 25px rgba(220,38,38,0.6);
+	}
 
-    /* Footer */
-    footer { text-align:center; padding-top:20px; border-top:1px solid var(--border-light); color: var(--gold); font-size:13px; }
 
-    /* Responsive */
-    @media(max-width:480px){
-      .slide { width:120px; }
-      h1 { font-size:24px; }
-      .link-text { font-size:15px; }
+    h1 {
+      font-size: 30px;
+      font-weight: 800;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 6px;
+    }
+
+    .tagline {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* LINKS */
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      padding: 18px 20px;
+      background: linear-gradient(180deg, #1a1a1a, #101010);
+      border-radius: var(--radius);
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      transition: 0.25s ease;
+    }
+
+    .link i {
+      font-size: 22px;
+      margin-right: 16px;
+      color: var(--accent);
+    }
+
+    .link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 40px rgba(220,38,38,0.45);
+    }
+
+	/* VIP PREMIUM LINK — SOFT */
+	.vip-link {
+	  background: linear-gradient(135deg, #fde68a, #fcd34d);
+	  color: #3f2d00;
+	  border: 1px solid rgba(255, 215, 100, 0.4);
+	  box-shadow: 0 8px 24px rgba(250, 204, 21, 0.25);
+	}
+
+	.vip-link i {
+	  color: #7c5c00;
+	}
+
+	.vip-link:hover {
+	  transform: translateY(-2px);
+	  box-shadow: 0 12px 30px rgba(250, 204, 21, 0.35);
+	}
+
+
+
+    /* SLIDER */
+    .slider-wrapper {
+      margin: 46px 0;
+    }
+
+    .slider-wrapper h2 {
+      text-align: center;
+      margin-bottom: 16px;
+      color: var(--accent);
+    }
+
+    .slider-row {
+      display: flex;
+      gap: 18px;
+      overflow-x: auto;
+      padding-bottom: 14px;
+      scroll-behavior: smooth;
+    }
+
+    .slider-row::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .slider-row::-webkit-scrollbar-thumb {
+      background: var(--accent);
+      border-radius: 10px;
+    }
+
+    /* CARD */
+	.slide {
+	  flex: 0 0 auto;
+	  width: 150px;
+	  aspect-ratio: 9 / 16; /* 🔥 9:16 standart */
+	  background: linear-gradient(180deg, #1a1a1a, #0f0f0f);
+	  border-radius: var(--radius);
+	  border: 1px solid var(--border);
+	  box-shadow: var(--shadow);
+	  overflow: hidden;
+	  cursor: pointer;
+	  transition: 0.3s ease;
+	  display: flex;
+	  flex-direction: column;
+	}
+
+
+    .slide:hover {
+      transform: translateY(-6px) scale(1.05);
+      box-shadow: 0 16px 40px rgba(220,38,38,0.5);
+    }
+
+	.slide img {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover; /* rasm kesiladi, cho‘zilmaydi */
+	  display: block;
+	}
+
+
+	.slide-name {
+	  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+	  color: #fff;
+	  padding: 10px 8px;
+	  font-size: 13px;
+	  font-weight: 600;
+	  margin-top: auto;
+	}
+
+
+    /* FOOTER */
+    footer {
+      margin-top: 50px;
+      padding-top: 18px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      .slide {
+        width: 125px;
+      }
+
+      .link {
+        padding: 16px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <div class="wrapper">
-    <!-- Header -->
-    <div class="header">
-      <div class="avatar"></div>
-      <h1>FASTORA</h1>
-      <div class="tagline">Eng sara filmlar va seriallar faqat bizda</div>
-    </div>
 
-    <!-- Links -->
-    <div class="links">
-      <a class="link" href="https://t.me/fastora_uz" target="_blank">
-        <i class="fab fa-telegram"></i>
-        <span class="link-text">Telegram kanalimiz</span>
-      </a>
-      <a class="link" href="https://t.me/fastora_vip" target="_blank">
-        <i class="fas fa-gem"></i>
-        <span class="link-text">VIP-ga ulanish</span>
-      </a>
-    </div>
+<div class="wrapper">
 
-    <!-- Poster Slider 1 -->
-    <div class="slider-wrapper">
-      <h2>Koreys dramalar</h2>
-      <div class="slider-row">
-        <div class="slide"><img src="https://cdn.fastora.uz/Series/Avatar%20Netflix/avatarthelastairbender-960x1200.jpg" alt=""><div class="slide-name">Avatar</div></div>
-        <div class="slide"><img src="https://cdn.fastora.uz/Series/CrashLandingOnYou/poster.webp" alt=""><div class="slide-name">Crash Landing On You</div></div>
-        <div class="slide"><img src="https://cdn.fastora.uz/Series/SquidGame/poster.webp" alt=""><div class="slide-name">Squid Game</div></div>
-        <div class="slide"><img src="https://cdn.fastora.uz/Series/ItaewonClass/poster.webp" alt=""><div class="slide-name">Itaewon Class</div></div>
-      </div>
-    </div>
-
-    <!-- Poster Slider 2 -->
-    <div class="slider-wrapper">
-      <h2>Tez orada</h2>
-      <div class="slider-row">
-        <div class="slide"><img src="https://cdn.fastora.uz/Series/PulQahramoni/1.webp" alt=""><div class="slide-name">Pul Qahramoni 1-qism</div></div>
-        <div class="slide"><img src="https://cdn.fastora.uz/Series/PulQahramoni/2.webp" alt=""><div class="slide-name">Pul Qahramoni 2-qism</div></div>
-        <div class="slide"><img src="https://cdn.fastora.uz/Series/PulQahramoni/3.webp" alt=""><div class="slide-name">Pul Qahramoni 3-qism</div></div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-      © 2026 FASTORA. Barcha huquqlar himoyalangan.
-    </footer>
+  <div class="header">
+    <div class="avatar"></div>
+    <h1>Minxo TV</h1>
+    <div class="tagline">Minxo TV xaritasi | Koreya dramalariga sayohatiz shu yerdan boshlanadi</div>
   </div>
+
+  <div class="links">
+    <a class="link" href="https://t.me/minxo_tv" target="_blank">
+      <i class="fab fa-telegram"></i>
+      <span>Telegram kanalimiz</span>
+    </a>
+    <a class="link youtube-link" href="https://youtube.com/@minxo_tv" target="_blank">
+      <i class="fab fa-youtube"></i>
+      <span>YouTube kanalimiz</span>
+    </a>
+	<a class="link vip-link" href="https://t.me/minxo_vip" target="_blank">
+	  <i class="fas fa-gem"></i>
+	  <span>VIP-ga ulanish</span>
+	</a>
+
+  </div>
+
+  <div class="slider-wrapper">
+    <h2>Koreys dramalar</h2>
+    <div class="slider-row" id="latest-korea"></div>
+
+    <div style="text-align:center;margin-top:20px;">
+      <a class="link" href="korea/index.html" style="display:inline-flex;">
+        <i class="fas fa-list"></i>
+        <span>Barchasini ko‘rish</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="slider-wrapper">
+    <h2>Tez orada</h2>
+    <div class="slider-row">
+      <div class="slide">
+        <img src="https://cdn.fastora.uz/Series/PulQahramoni/1.webp">
+        <div class="slide-name">Pul Qahramoni 1-qism</div>
+      </div>
+      <div class="slide">
+        <img src="https://cdn.fastora.uz/Series/PulQahramoni/2.webp">
+        <div class="slide-name">Pul Qahramoni 2-qism</div>
+      </div>
+      <div class="slide">
+        <img src="https://cdn.fastora.uz/Series/PulQahramoni/3.webp">
+        <div class="slide-name">Pul Qahramoni 3-qism</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Minxo TV. Barcha huquqlar himoyalangan.
+  </footer>
+
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/render.js"></script>
+<script>
+  renderDramas("latest-korea", koreaDramas, 10);
+</script>
+
 </body>
 </html>
