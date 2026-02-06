@@ -126,18 +126,39 @@ footer {
   h1 { font-size:20px; }
   .card-title { font-size:12px; }
 }
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Mobil uchun */
+@media (max-width: 480px) {
+  .page-header {
+    flex-wrap: nowrap;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+  
 </style>
 </head>
 <body>
 
 <div class="wrapper">
   <!-- Orqaga tugma -->
-  <a href="../" class="back">
-    <span style="font-size:18px; margin-right:6px;">⬅</span> Orqaga
-  </a>
+  <div class="page-header">
+    <a href="../" class="back">
+      <span style="font-size:18px; margin-right:6px;">⬅</span> Orqaga
+    </a>
 
-  <!-- Sarlavha -->
-  <h1>KOREA DRAMALARI</h1>
+    <h1>KOREA DRAMALARI</h1>
+  </div>
 
 
   <div class="grid" id="posterGrid"></div>
@@ -173,4 +194,5 @@ if (typeof koreaDramas !== "undefined") {
 </script>
 </body>
 </html>
+
 
