@@ -1,5 +1,10 @@
 const koreaDramas = [
   {
+    "title": "Oy Ogʻushidagi ishq",
+    "poster": "https://cdn.fastora.uz/minxo_tv/oy-ogʻushidagi-ishq.jpg",
+    "link": "https://t.me/Minxotv_Arxiv/8138"
+  },
+  {
     "title": "Men bugundan insonman",
     "poster": "https://cdn.fastora.uz/minxo_tv/men-bugundan-insonman.jpg",
     "link": "https://t.me/Minxotv_Arxiv/8430"
