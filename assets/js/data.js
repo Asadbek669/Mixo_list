@@ -1,5 +1,10 @@
 const koreaDramas = [
   {
+    "title": "Sarmast ishq",
+    "poster": "https://cdn.fastora.uz/minxo_tv/sarmast-ishq.jpg",
+    "link": "https://t.me/Minxotv_Arxiv/6040"
+  },
+  {
     "title": "Salmariga hush kebsiz",
     "poster": "https://cdn.fastora.uz/minxo_tv/salmariga-hush-kebsiz.jpg",
     "link": "https://t.me/Minxotv_Arxiv/5153"
