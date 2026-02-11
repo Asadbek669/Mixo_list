@@ -1,5 +1,10 @@
 const koreaDramas = [
   {
+    "title": "Bo'ron",
+    "poster": "https://cdn.fastora.uz/minxo_tv/boron.jpg",
+    "link": "https://t.me/Minxotv_Arxiv/7811"
+  },
+  {
     "title": "Yonimda bo'lganingda",
     "poster": "https://cdn.fastora.uz/minxo_tv/yonimda-bolganingda.jpg",
     "link": "https://t.me/Minxotv_Arxiv/8088"
