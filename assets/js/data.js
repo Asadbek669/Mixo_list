@@ -1,5 +1,10 @@
 const koreaDramas = [
   {
+    "title": "Qadrli hong rang",
+    "poster": "https://cdn.fastora.uz/minxo_tv/qadrli-hong-rang.jpg",
+    "link": "https://t.me/Minxotv_Arxiv/7445"
+  },
+  {
     "title": "Zolimning oshpazi",
     "poster": "https://cdn.fastora.uz/minxo_tv/zolimning-oshpazi.jpg",
     "link": "https://t.me/Minxotv_Arxiv/7771"
