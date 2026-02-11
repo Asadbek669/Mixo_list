@@ -1,5 +1,10 @@
 const koreaDramas = [
   {
+    "title": "Hushyor",
+    "poster": "https://cdn.fastora.uz/minxo_tv/hushyor.jpg",
+    "link": "https://t.me/Minxotv_Arxiv/6041"
+  },
+  {
     "title": "Kapalak sevgi shakli",
     "poster": "https://cdn.fastora.uz/minxo_tv/kapalak-sevgi-shakli.jpg",
     "link": "https://t.me/Minxotv_Arxiv/77"
