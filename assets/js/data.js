@@ -1,5 +1,10 @@
 const koreaDramas = [
   {
+    "title": "Quyosh nurini o'lchami",
+    "poster": "https://cdn.fastora.uz/minxo_tv/quyosh-nurini-olchami.jpg",
+    "link": "https://t.me/Minxotv_Arxiv/8387"
+  },
+  {
     "title": "Idolning advokati",
     "poster": "https://cdn.fastora.uz/minxo_tv/idolning-advokati.jpg",
     "link": "https://t.me/Minxotv_Arxiv/8383"
