@@ -1,5 +1,10 @@
 const koreaDramas = [
   {
+    "title": "Kechani o'g'irladim",
+    "poster": "https://cdn.fastora.uz/minxo_tv/kechani-ogirladim.jpg",
+    "link": "https://t.me/Minxotv_Arxiv/7677"
+  },
+  {
     "title": "Bo'ron",
     "poster": "https://cdn.fastora.uz/minxo_tv/boron.jpg",
     "link": "https://t.me/Minxotv_Arxiv/7811"
