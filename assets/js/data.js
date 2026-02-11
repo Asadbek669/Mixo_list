@@ -1,5 +1,10 @@
 const koreaDramas = [
   {
+    "title": "Yozilmagan Seul Hikoyasi",
+    "poster": "https://cdn.fastora.uz/minxo_tv/yozilmagan-seul-hikoyasi.jpg",
+    "link": "https://t.me/Minxotv_Arxiv/7671"
+  },
+  {
     "title": "19 qavat",
     "poster": "https://cdn.fastora.uz/minxo_tv/19-qavat.jpg",
     "link": "https://t.me/Minxotv_Arxiv/8157"
