@@ -29,11 +29,11 @@
       --bg: #0b0b0b;
       --card: #141414;
       --text: #ffffff;
-      --muted: #b3b3b3;
+      --muted: #ffffff;
 
       --accent: #ff79c6;
       --accent-light: #ef4444;
-      --gradient: linear-gradient(135deg, #dc2626, #ffffff);
+      --gradient: linear-gradient(135deg, #ffb6c1, #ff69b4); 
 
       --border: rgba(255,255,255,0.08);
       --shadow: 0 10px 30px rgba(0,0,0,0.7);
@@ -51,6 +51,7 @@
     .wrapper {
       max-width: 1000px;
       margin: auto;
+	  background-color: rgba(50, 25, 35, 0.5); 
     }
 
     /* HEADER */
@@ -60,14 +61,14 @@
     }
 
 	.avatar {
-	  width: 100px;
-	  height: 100px;
+	  width: 150px;
+	  height: 150px;
 	  border-radius: 50%;
 	  background: 
-		url("assets/img/avatar.jpg") center / cover no-repeat,
-		linear-gradient(135deg, #dc2626, #ffffff);
+		  url("assets/img/avatar.jpg") center / cover no-repeat,
+		  linear-gradient(135deg, #ffffff, #ffc0cb); /* oq → pushti */
 	  margin: 0 auto 14px;
-	  box-shadow: 0 0 25px rgba(220,38,38,0.6);
+	  box-shadow: 0 0 25px rgba(255,192,203,0.6); /* pushti rangga moslash */
 	}
 
 
@@ -118,7 +119,7 @@
 
     .link:hover {
       transform: translateY(-3px);
-      box-shadow: 0 14px 40px rgba(220,38,38,0.45);
+      box-shadow: 0 14px 40px rgba(255,192,203,0.45);
     }
 
 	/* VIP PREMIUM LINK — SOFT */
@@ -187,7 +188,7 @@
 
     .slide:hover {
       transform: translateY(-6px) scale(1.05);
-      box-shadow: 0 16px 40px rgba(220,38,38,0.5);
+      box-shadow: 0 14px 40px rgba(255,192,203,0.45);
     }
 
 	.slide img {
@@ -237,7 +238,7 @@
   text-align: center;
   margin-bottom: 0px;
   padding: 40px 16px 36px; /* pastini biroz kattaroq qildik */
-  border-radius: 20px;
+  border-radius: 0px;
   overflow: hidden;
 }
 
@@ -253,7 +254,7 @@
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.1)
     ),
-    url("assets/img/IMG_20260211_154452_069.jpg") center / cover no-repeat;
+    url("assets/img/photo_4_2026-02-12_02-09-39.jpg") center / cover no-repeat;
   z-index: 0;
 }
 
@@ -265,6 +266,7 @@
 	
   </style>
 </head>
+
 
 <body>
 
