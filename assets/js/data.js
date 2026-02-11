@@ -1,5 +1,10 @@
 const koreaDramas = [
   {
+    "title": "Mening partadoshim",
+    "poster": "https://cdn.fastora.uz/minxo_tv/mening-partadoshim.jpg",
+    "link": "https://t.me/Minxotv_Arxiv/2804"
+  },
+  {
     "title": "19 Hayotimda Korishguncha",
     "poster": "https://cdn.fastora.uz/minxo_tv/19-hayotimda-korishguncha.jpg",
     "link": "https://t.me/Minxotv_Arxiv/7594"
