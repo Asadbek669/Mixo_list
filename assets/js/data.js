@@ -1,5 +1,10 @@
 const koreaDramas = [
   {
+    "title": "19 qavat",
+    "poster": "https://cdn.fastora.uz/minxo_tv/19-qavat.jpg",
+    "link": "https://t.me/Minxotv_Arxiv/8157"
+  },
+  {
     "title": "Bosa olmaslik kerak edi",
     "poster": "https://cdn.fastora.uz/minxo_tv/bosa-olmaslik-kerak-edi.jpg",
     "link": "https://t.me/Minxotv_Arxiv/8120"
