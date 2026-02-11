@@ -1,5 +1,10 @@
 const koreaDramas = [
   {
+    "title": "Idolning advokati",
+    "poster": "https://cdn.fastora.uz/minxo_tv/idolning-advokati.jpg",
+    "link": "https://t.me/Minxotv_Arxiv/8383"
+  },
+  {
     "title": "9 jumboq",
     "poster": "https://cdn.fastora.uz/minxo_tv/9-jumboq.jpg",
     "link": "https://t.me/Minxotv_Arxiv/7895"
