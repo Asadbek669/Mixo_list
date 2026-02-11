@@ -1,5 +1,10 @@
 const koreaDramas = [
   {
+    "title": "9 jumboq",
+    "poster": "https://cdn.fastora.uz/minxo_tv/9-jumboq.jpg",
+    "link": "https://t.me/Minxotv_Arxiv/7895"
+  },
+  {
     "title": "Bahoriy hislar",
     "poster": "https://cdn.fastora.uz/minxo_tv/bahoriy-hislar.jpg",
     "link": "https://t.me/Minxotv_Arxiv/8386"
