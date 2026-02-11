@@ -1,5 +1,10 @@
 const koreaDramas = [
   {
+    "title": "Zolushka va to'rt ritsar",
+    "poster": "https://cdn.fastora.uz/minxo_tv/zolushka-va-tort-ritsar.jpg",
+    "link": "https://t.me/Minxotv_Arxiv/8464"
+  },
+  {
     "title": "Taqiqlangan nikoh",
     "poster": "https://cdn.fastora.uz/minxo_tv/taqiqlangan-nikoh.jpg",
     "link": "https://t.me/Minxotv_Arxiv/7878"
